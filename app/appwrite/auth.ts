@@ -16,6 +16,8 @@ export const getExistingUser = async (id: string) => {
   }
 };
 
+//Fixed issue with server
+
 export const storeUserData = async () => {
   try {
     const user = await account.get();
