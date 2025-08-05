@@ -5,10 +5,11 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import {sentryReactRouter, type SentryReactRouterBuildOptions} from "@sentry/react-router";
 
 const sentryConfig: SentryReactRouterBuildOptions = {
-  org: "js-mastery-yx",
+  org: "alumaa",
   project: "travel-agency",
-  // An auth token is required for uploading source maps.
-  authToken: "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"
+  // An auth token is required for uploading source maps;
+  // store it in an environment variable to keep it secure.
+  authToken: "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",
   // ...
 };
 
