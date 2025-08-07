@@ -89,7 +89,7 @@ const TripDetail = ({loaderData}: Route.ComponentProps) => {
                                 <ChipsDirective>
                                     <ChipDirective
                                     text="4.9/5"
-                                    cssClass="!bg-yellow-50 !text-yellow-700"/>
+                                    cssClass="!bg-amber-300 !text-success-700"/>
                                 </ChipsDirective>
                             </ChipListComponent>
                         </li>
