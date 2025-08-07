@@ -24,7 +24,8 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
             id: $id,
             ...parseTripData(tripDetail),
             imageUrls: imageUrls ?? []
-        })),total
+        })),
+        total
     }
     
 }
@@ -35,9 +36,9 @@ const Trips = ({loaderData}: Route.ComponentProps) => {
   const initialPage = Number(searchParams.get('page') || '1');
   const [currentPage, setCurrentPage] = useState(initialPage);
 
-  const handlePageChange = (page:number) => {
+  const handlePageChange = (page: number) => {
     setCurrentPage(page);
-    window.location.search = `page?${page}`
+    window.location.search = `?page=${page}`
   }
 
   return (
