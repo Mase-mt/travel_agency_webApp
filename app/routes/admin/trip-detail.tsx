@@ -1,9 +1,10 @@
-import type { LoaderFunctionArgs } from "react-router"
+import { useNavigate, type LoaderFunctionArgs } from "react-router"
 import { getAllTrips, getTripById } from "~/appwrite/trips"
 import type { Route } from "./+types/trip-detail";
 import { cn, getFirstWord, parseTripData } from "~/lib/util";
 import { Header, InfoPill, TripCard } from "components";
 import { ChipDirective, ChipListComponent, ChipsDirective } from "@syncfusion/ej2-react-buttons";
+
 
 export const loader = async ({ params }: LoaderFunctionArgs) => {
     const  {tripId} = params;
